@@ -19,3 +19,6 @@ jobs:
           testFilePath: jpetstore_adding-more-itemtocart_2.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
+      - name: Create artifact files
+        run: |
+          mkdir -p myNewFolder/myNewSubFolder
