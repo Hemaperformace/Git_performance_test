@@ -21,5 +21,7 @@ jobs:
           args: "--loglevel INFO"
       - name: Create artifact files
         run: |
-          mkdir -p myNewFolder/myNewSubFolder && cp -R dist myNewFolder/myNewSubFolder
-          ls myNewFolder/MyNewSubFolder
+          mkdir -p reults/dir-1
+          mkdir -p reults/dir-2
+          echo "Lorem ipsum dolor sit amet" > reults/dir-1/file1.txt
+          echo "Hello world from file #2" > reults/dir-2/file2.txt
