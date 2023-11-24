@@ -19,3 +19,5 @@ jobs:
           testFilePath: jpetstore_adding-more-itemtocart_2.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
+    outputs:
+      output1: ${{ steps.step1.outputs.test }}
